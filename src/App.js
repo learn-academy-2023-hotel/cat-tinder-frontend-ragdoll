@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import mockDogs from "./mockDogs";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router-dom";
 import DogEdit from "./pages/DogEdit";
 import DogIndex from "./pages/DogIndex";
 import DogNew from "./pages/DogNew";
@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 
 
 const App = () => {
+  const [dogs, setDogs] = useState(mockDogs)
   return (
     <>
       <Header />

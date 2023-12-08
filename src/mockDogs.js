@@ -1,4 +1,4 @@
-const mockDogs = [
+const dogs = [
     {
       id: 1,
       name: "Kevin",
@@ -25,5 +25,5 @@ const mockDogs = [
     },
   ];
   
-  export default mockDogs;
+  export default dogs;
   
