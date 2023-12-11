@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react"
 import "./App.css";
 import mockDogs from "./mockDogs";
 import Header from "./components/Header";
