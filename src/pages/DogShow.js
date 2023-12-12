@@ -14,9 +14,11 @@ const DogShow = ({ dogs }) => {
 						src={currentDog.image}
 						className="dog-show-img"
 					/>
-					Name {currentDog.name}
-					Age {currentDog.age}
-          Enjoys of Life: {currentDog.enjoys}
+					<div>
+					<p>Name {currentDog.name}</p>
+					<p>Age {currentDog.age}</p>
+          <p>Enjoys of Life: {currentDog.enjoys}</p>
+					</div>
 				</>
 			)}
 		</main>
