@@ -18,3 +18,13 @@
   font-weight:bolder;
 }
 
+.header-nav img {
+  max-width: 25%;
+  max-height: 25%
+}
+
+.dog-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

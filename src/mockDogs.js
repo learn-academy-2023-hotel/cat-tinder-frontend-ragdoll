@@ -5,7 +5,7 @@ const dogs = [
       age: 9,
       enjoys: "sleeping in his forts",
       image:
-        "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://www.cjonline.com/gcdn/authoring/2016/03/19/NTCJ/ghows-KS-82c22c0b-bd58-42ad-bb1e-f0a455a4d6e1-3abc8d40.jpeg?width=660&height=953&fit=crop&format=pjpg&auto=webp",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const dogs = [
       age: 14,
       enjoys: "sleeping on pillow",
       image:
-        "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80",
+        "https://i.pinimg.com/736x/4c/77/67/4c7767649432cf26e0d320397d986a6c.jpg",
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ const dogs = [
       age: 12,
       enjoys: "being awesome",
       image:
-        "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://i.pinimg.com/736x/3f/31/b1/3f31b1b27531bfe7dffa5493b9dd58f6.jpg",
     },
   ];
   
