@@ -4,14 +4,14 @@ import { BrowserRouter } from "react-router-dom";
 
 describe("<DogNew />", () => {
 	it("renders a new dog form", () => {
-		render(
-			<BrowserRouter>
-				<DogNew />
-			</BrowserRouter>
-		);
-
-		const nameInput = screen.getByRole("textbox", {
-			name: /name/i,
+    render(
+      <BrowserRouter>
+        <DogNew />
+      </BrowserRouter>
+    );
+    
+    const nameInput = screen.getByRole("textbox", {
+      name: /name/i,
 		});
 		expect(nameInput).toBeInTheDocument();
 
@@ -19,10 +19,20 @@ describe("<DogNew />", () => {
 			name: /enjoys/i,
 		});
 		expect(enjoysInput).toBeInTheDocument();
+
 	});
 
 	it("has a form with entries for name, age, enjoys, image", () => {
+    render(
+      <BrowserRouter>
+        <DogNew />
+      </BrowserRouter>
+    );
 		const formName = screen.getByText(/name/i);
 		expect(formName.getAttribute("for")).toEqual("name");
-	});
+
+		const formEnjoys = screen.getByText(/enjoys/i);
+		expect(formEnjoys.getAttribute("for")).toEqual("enjoys");
+	})
+
 });
