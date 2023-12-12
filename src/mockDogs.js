@@ -1,7 +1,7 @@
 const dogs = [
     {
       id: 1,
-      name: "Kevin",
+      name: "Fito",
       age: 9,
       enjoys: "sleeping in his forts",
       image:

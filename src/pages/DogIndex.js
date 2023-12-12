@@ -36,7 +36,6 @@ const DogIndex = ({ dogs }) => {
 					</CardBody>
 				</Card>
 			))}
-			;
 		</main>
 	);
 };
