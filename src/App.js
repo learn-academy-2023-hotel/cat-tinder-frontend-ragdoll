@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import mockDogs from "./mockDogs";
 import Header from "./components/Header";
@@ -12,7 +12,18 @@ import DogShow from "./pages/DogShow";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
-  const [dogs, setDogs] = useState(mockDogs);
+  const [dogs, setDogs] = useState([]);
+
+  useEffect(() => {
+    readDogs()
+  }, [])
+
+  const readDogs = () => {
+    fetch("http://localhost:3000/dogs")
+    .then((response) => response.json())
+    .then((payload) => setDogs(payload))
+    .catch((error) => console.log(error))
+  }
 
   const updateDog = (dog, id) => {
     console.log("dog: ", dog);
