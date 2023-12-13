@@ -29,7 +29,7 @@ const App = () => {
           element={<DogEdit dogs={dogs} updateDog={updateDog} />}
         />
         <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
-        <Route path="/dognew" element={<DogNew createDog={createDog} />} />
+        <Route path="/dognew" element={<DogNew />} />
         <Route path="/dogshow/:id" element={<DogShow dogs={dogs} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
