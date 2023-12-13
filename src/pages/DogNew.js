@@ -12,11 +12,11 @@ const DogNew = ({ createDog }) => {
 		image: "",
 	});
 
-	const handleChange = (event) => {
+	const handleChange = (e) => {
 		// spread operator makes a copy of our state object(newDog)
 		// will tell us which key we're updating
 		// will tell us the value we're inputting and setting to that key
-		setNewDog({ ...newDog, [event.target.name]: event.target.value });
+		setNewDog({ ...newDog, [e.target.name]: e.target.value });
 	};
 
 	const handleSubmit = () => {
