@@ -12,7 +12,7 @@ const DogIndex = ({ dogs }) => {
 					color="dark"
 					inverse
 					style={{
-						width: "18rem",
+						width: "20rem",
 					}}
 					key={index}>
 					<img alt={`profile of a dog named ${dog.name}`} src={dog.image} className="image-flex" />
