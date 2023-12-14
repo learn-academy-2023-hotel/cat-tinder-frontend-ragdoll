@@ -28,7 +28,7 @@ const DogShow = ({ dogs, deleteDog }) => {
 						Edit Dog Profile
 					</NavLink>
 					<NavLink to="/dogindex">
-						<Button onClick={handleDelete()}>Delete Dog Profile</Button>
+						<Button onClick={handleDelete}>Delete Dog Profile</Button>
 					</NavLink>
 				</>
 			)}
