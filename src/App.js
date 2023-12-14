@@ -8,7 +8,6 @@ import DogIndex from "./pages/DogIndex";
 import DogNew from "./pages/DogNew";
 import DogShow from "./pages/DogShow";
 import NotFound from "./pages/NotFound";
-// import mockDogs from "./mockDogs";
 import "./App.css";
 
 

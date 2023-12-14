@@ -1,21 +1,22 @@
-import React from "react";
-import { Nav, NavItem } from "reactstrap"
-import { NavLink } from "react-router-dom"
-import dogLogo from "../assets/dog-silouette.png"
-import "../App.css"
+import { Nav, NavItem } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import dogLogo from "../assets/dog-silouette.png";
+import "../App.css";
 
 const Header = () => {
+
   return (
-    <Nav className="header-nav">
+     <Nav className="header-nav">
       <NavItem>
-        <NavLink to="/">
-          <img
-            src={dogLogo}
-            alt="Dog Tinder logo with outline of dog"
-            className="dog-logo"
-          />
-        </NavLink>
+          <NavLink to="/" className="nav-link">
+            <img
+              src={dogLogo}
+              alt="Dog Tinder logo with outline of dog"
+              className="dog-logo"
+            />
+          </NavLink>
       </NavItem>
+      <div className="links">
       <NavItem>
         <NavLink to="/dogindex" className="nav-link">
           Meet the Dogs
@@ -35,11 +36,10 @@ const Header = () => {
           Adopt a Dog!
         </a>
       </NavItem>
+      </div>
     </Nav>
-  )
-}
-// const Header = () => {
-//   return <div className="header">Doggy Dogg World</div>;
-// };
+  );
+};
+
 
 export default Header;
