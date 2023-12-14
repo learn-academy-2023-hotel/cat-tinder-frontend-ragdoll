@@ -1,11 +1,13 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import "../App.css"
 
 const DogIndex = ({ dogs }) => {
 	return (
 		<main className="dog-index-cards">
 			{dogs?.map((dog, index) => (
+				<div className="card-flex">
 				<Card
 					color="dark"
 					inverse
@@ -13,7 +15,7 @@ const DogIndex = ({ dogs }) => {
 						width: "18rem",
 					}}
 					key={index}>
-					<img alt={`profile of a dog named ${dog.name}`} src={dog.image} />
+					<img alt={`profile of a dog named ${dog.name}`} src={dog.image} className="image-flex" />
 					<CardBody>
 						<CardTitle tag="h5">{dog.name}</CardTitle>
 						<CardSubtitle className="mb-2 text-muted" tag="h6">
@@ -28,6 +30,7 @@ const DogIndex = ({ dogs }) => {
 						</NavLink>
 					</CardBody>
 				</Card>
+				</div>
 			))}
 		</main>
 	);
