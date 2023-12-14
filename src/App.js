@@ -65,6 +65,7 @@ const App = () => {
 
   return (
     <>
+    <body className="main-body">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -77,8 +78,9 @@ const App = () => {
         <Route path="/dogshow/:id" element={<DogShow dogs={dogs} deleteDog={deleteDog} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </body>
       <Footer />
-    </>
+      </>
   );
 };
 
