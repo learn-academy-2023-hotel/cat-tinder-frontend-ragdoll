@@ -1,12 +1,5 @@
 import React from "react";
-import {
-	Card,
-	CardBody,
-	CardTitle,
-	CardSubtitle,
-	CardText,
-	Button,
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 const DogIndex = ({ dogs }) => {
