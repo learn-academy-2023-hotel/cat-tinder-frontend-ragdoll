@@ -6,7 +6,7 @@
 
 .header-nav {
   font-size: 25px;
-  background-color:  #124e78;
+  background-color: #124e78;
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
@@ -24,17 +24,15 @@
 .links {
   display: flex;
   flex-direction: row;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .dog-logo {
   width: 50px;
   height: 50px;
-  
 }
 
-@media (max-width: 500px){
-
+@media (max-width: 500px) {
 }
 
 /* Home styles */
@@ -50,7 +48,7 @@
 
 .not-found {
   font-size: 100px;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 /* Dog Index styles */
@@ -83,7 +81,7 @@
 
 .footer {
   font-size: 15px;
-  color:#f0f0c9;
+  color: #f0f0c9;
   background-color: #124e78;
   display: flex;
   justify-content: center;
