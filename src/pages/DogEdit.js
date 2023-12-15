@@ -8,11 +8,11 @@ const DogEdit = ({ dogs, updateDog }) => {
 	let currentDog = dogs?.find((dog) => dog.id === +id);
 
 	const [editDog, setEditDog] = useState({
-		name: currentDog.name,
-		age: currentDog.age,
-		enjoys: currentDog.enjoys,
-		image: currentDog.image,
-		id: currentDog.id,
+		name: currentDog?.name,
+		age: currentDog?.age,
+		enjoys: currentDog?.enjoys,
+		image: currentDog?.image,
+		id: currentDog?.id,
 	});
 	const handleChange = (e) => {
 		setEditDog({ ...editDog, [e.target.name]: e.target.value });
