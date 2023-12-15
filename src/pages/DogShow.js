@@ -24,11 +24,14 @@ const DogShow = ({ dogs, deleteDog }) => {
             <p>Age {currentDog.age}</p>
             <p>Enjoys of Life: {currentDog.enjoys}</p>
           </div>
-          <NavLink to={`/dogedit/${currentDog.id}`} className="nav-link">
-            Edit Dog Profile
+          <NavLink to={`/dogedit/${currentDog.id}`}
+              className="edit-link">
+            <Button>
+			  Edit Dog Profile
+			  </Button>
           </NavLink>
-          <NavLink to="/dogindex">
-            <Button onClick={handleDelete}>Delete Dog Profile</Button>
+          <NavLink to="/dogindex" onClick={handleDelete}>
+            <Button >Delete Dog Profile</Button>
           </NavLink>
         </>
       )}

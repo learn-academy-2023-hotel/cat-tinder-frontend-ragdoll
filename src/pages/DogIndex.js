@@ -12,9 +12,11 @@ const DogIndex = ({ dogs }) => {
             color="dark"
             inverse
             style={{
-              width: "20rem",
+              width: "18rem",
+              transition: "transform 0.2s",
             }}
             key={index}
+            className="hover-card"
           >
             <img
               alt={`profile of a dog named ${dog.name}`}
@@ -26,10 +28,7 @@ const DogIndex = ({ dogs }) => {
               <CardSubtitle className="mb-2 text-muted" tag="h6">
                 Age: {dog.age}
               </CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card‘s content.
-              </CardText>
+              <CardText>Age: {dog.age}</CardText>
               <NavLink to={`/dogshow/${dog.id}`} className="nav-link">
                 See More Details
               </NavLink>

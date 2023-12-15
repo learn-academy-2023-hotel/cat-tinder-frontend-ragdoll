@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Nav className="header-nav">
       <NavItem>
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/" className="nav-logo">
           <img
             src={dogLogo}
             alt="Dog Tinder logo with outline of dog"

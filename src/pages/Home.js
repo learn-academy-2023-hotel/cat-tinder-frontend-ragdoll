@@ -1,5 +1,5 @@
 import React from "react";
-import FrontPage from "../assets/cropped-1920-1080-301720.png";
+import FrontPage from "../assets/homeimage.png";
 import "../App.css";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         Dog Tinder: Where Dogs Rule the Social Media Pack!
       </h1>
       <div className="home-flex">
-        <img src={FrontPage} alt="bunch of smiling dogs" />
+        <img src={FrontPage} alt="bunch of smiling dogs"  />
       </div>
     </>
   );

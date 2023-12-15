@@ -10,20 +10,19 @@ import DogShow from "./pages/DogShow";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 
-
 const App = () => {
   const [dogs, setDogs] = useState([]);
 
   useEffect(() => {
-    readDog()
-  }, [])
+    readDog();
+  }, []);
 
   const readDog = () => {
     fetch("http://localhost:3000/dogs")
       .then((response) => response.json())
       .then((payload) => setDogs(payload))
-      .catch((error) => console.log(error))
-  }
+      .catch((error) => console.log(error));
+  };
 
   const createDog = (createdDog) => {
     fetch("http://localhost:3000/dogs", {
@@ -35,52 +34,55 @@ const App = () => {
     })
       .then((response) => response.json())
       .then(() => readDog())
-      .catch((error) => console.log("Dog create errors:", error))
-  }
+      .catch((error) => console.log("Dog create errors:", error));
+  };
 
   const updateDog = (dog, id) => {
     fetch(`http://localhost:3000/dogs/${id}`, {
       body: JSON.stringify(dog),
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      method: "PATCH"
+      method: "PATCH",
     })
-    .then((response) => response.json())
-    .then(() => readDog())
-    .catch((errors) => console.log("Dog update errors:", errors))
+      .then((response) => response.json())
+      .then(() => readDog())
+      .catch((errors) => console.log("Dog update errors:", errors));
   };
 
   const deleteDog = (id) => {
     fetch(`http://localhost:3000/dogs/${id}`, {
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      method: "DELETE"
+      method: "DELETE",
     })
       .then((response) => response.json())
       .then(() => readDog())
-      .catch((errors) => console.log("delete errors:", errors))
-  }
+      .catch((errors) => console.log("delete errors:", errors));
+  };
 
   return (
     <>
-    <body className="main-body">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/dogedit/:id"
-          element={<DogEdit dogs={dogs} updateDog={updateDog} />}
-        />
-        <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
-        <Route path="/dognew" element={<DogNew createDog={createDog} />} />
-        <Route path="/dogshow/:id" element={<DogShow dogs={dogs} deleteDog={deleteDog} />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <body className="main-body">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/dogedit/:id"
+            element={<DogEdit dogs={dogs} updateDog={updateDog} />}
+          />
+          <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
+          <Route path="/dognew" element={<DogNew createDog={createDog} />} />
+          <Route
+            path="/dogshow/:id"
+            element={<DogShow dogs={dogs} deleteDog={deleteDog} />}
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </body>
       <Footer />
-      </>
+    </>
   );
 };
 
